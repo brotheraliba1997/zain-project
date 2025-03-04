@@ -1,7 +1,13 @@
-"use client";
+// "use client";
 
-import { Provider } from "react-redux";
-import { store } from "../redux/store";
+// import { Provider } from "react-redux";
+// import { store } from "../redux/store";
+// import {store} from '.../redux/store'
+// import { Providers } from "./reduxToolkit/provider";
+
+// import { store } from "../../redux/store";
+
+import { Providers } from "../../reduxToolkit/provider";
 
 import { DM_Sans } from "next/font/google";
 import './assets/scss/tailwind.scss'
@@ -22,9 +28,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="light scroll-smooth dm_sans" dir="ltr">
       <body className={`${dm_sans.variable} dark:bg-slate-900`}>
         
-        <Provider store={store} >
+<Providers>
         {children}
-        </Provider>
+        </Providers>
         </body>
     </html>
   );
