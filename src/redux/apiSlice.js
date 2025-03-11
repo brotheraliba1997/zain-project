@@ -1,5 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { authQuery } from './authSlice';
+
+
+
 export const apiSlice = createApi({
   reducerPath: 'api',
   baseQuery:authQuery,
@@ -9,7 +12,6 @@ export const apiSlice = createApi({
     getPosts: builder.query({
       query: () => '/posts',
       providesTags: ['Post'],
-    
     }),
     getPostById: builder.query({
       query: (id) => `/posts/${id}`,
