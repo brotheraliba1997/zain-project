@@ -13,9 +13,9 @@ export const authQuery = fetchBaseQuery({
     },
 });
 
-export const loginApi = createApi({
-    reducerPath: "loginApi",
-    baseQuery: fetchBaseQuery({ baseUrl: "https://jsonplaceholder.typicode.com" }),
+export const authentationApi = createApi({
+    reducerPath: "authentationApi",
+    baseQuery: authQuery,
     endpoints: (builder) => ({
         loginUser: builder.mutation({
             query: (credentials) => ({
@@ -25,14 +25,7 @@ export const loginApi = createApi({
                 headers: { "Content-Type": "application/json" },
             }),
         }),
-    
-    }),
-});
 
-export const logoutApi = createApi({
-    reducerPath: "logoutApi",
-    baseQuery: authQuery,
-    endpoints: (builder) => ({
         logoutUser: builder.mutation({
             query: () => ({
                 url: "/logout",
@@ -43,5 +36,5 @@ export const logoutApi = createApi({
     }),
 });
 
-export const { useLoginUserMutation } = loginApi;
-export const { useLogoutUserMutation } = logoutApi;
+
+export const { useLoginUserMutation,useLogoutUserMutation } = authentationApi;
