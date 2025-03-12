@@ -25,6 +25,7 @@ export const loginApi = createApi({
                 headers: { "Content-Type": "application/json" },
             }),
         }),
+    
     }),
 });
 
