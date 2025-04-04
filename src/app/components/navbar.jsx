@@ -173,7 +173,7 @@ export default function Navbar({navClass, navlight}){
                                     <li className="py-1.5 px-4 ms-0">
                                         <span className="text-center block">
                                             <Link href="#" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center rounded-md bg-orange-500 border border-orange-500 text-white me-1">View Cart</Link>
-                                            <Link href="#" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center rounded-md bg-orange-500 border border-orange-500 text-white">Checkout</Link>
+                                            <Link href="/shop-checkout" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center rounded-md bg-orange-500 border border-orange-500 text-white">Checkout</Link>
                                         </span>
                                         <p className="text-sm text-slate-400 mt-1">*T&C Apply</p>
                                     </li>
@@ -222,7 +222,7 @@ export default function Navbar({navClass, navlight}){
 
                 <div id="navigation" style={{display: isToggle === true ? 'block' : 'none'}}>
                     <ul className={`navigation-menu ${navlight === true ? 'nav-light' : ''}`}>
-                        <li className={`has-submenu parent-menu-item ${['/', '/index-fashion-two', '/index-fashion-three','/index-fashion-four','/index-item'].includes(manu) ? 'active' : ''}`}>
+                        {/* <li className={`has-submenu parent-menu-item ${['/', '/index-fashion-two', '/index-fashion-three','/index-fashion-four','/index-item'].includes(manu) ? 'active' : ''}`}>
                             <Link href="#" onClick={()=>setSubManu(setManu === '/index-item' ? '' : '/index-item' )}>Hero</Link><span className="menu-arrow"></span>
                             <ul className={`submenu ${['/', '/index-fashion-two', '/index-fashion-three','/index-fashion-four','/index-item'].includes(subManu) ? 'open' : ''}`}>
                                 <li className={`ms-0 ${manu === '/' ? 'active' : ''}`}><Link href="/" className="sub-menu-item">Fashion One</Link></li>
@@ -230,7 +230,7 @@ export default function Navbar({navClass, navlight}){
                                 <li className={`ms-0 ${manu === '/index-fashion-three' ? 'active' : ''}`}><Link href="/index-fashion-three" className="sub-menu-item">Fashion Three</Link></li>
                                 <li className={`ms-0 ${manu === '/index-fashion-four' ? 'active' : ''}`}><Link href="/index-fashion-four" className="sub-menu-item">Fashion Four</Link></li>
                             </ul>
-                        </li>
+                        </li> */}
 
                         <li className={`has-submenu parent-parent-menu-item ${['/product-item'].includes(manu) ? 'active' : ''}`}>
                             <Link href="#" onClick={()=>setSubManu(setManu === '/product-item' ? '' : '/product-item' )}>Products</Link><span className="menu-arrow"></span>
@@ -239,19 +239,19 @@ export default function Navbar({navClass, navlight}){
                                 <li className='ms-0'>
                                     <ul>
                                         <li className="megamenu-head ms-0">Product Features</li>
-                                        <li className='ms-0'><Link href="#!" className="sub-menu-item">Bundle - Upsell</Link></li>
-                                        <li className='ms-0'><Link href="#!" className="sub-menu-item">Hot Stock</Link></li>
-                                        <li className='ms-0'><Link href="#!" className="sub-menu-item">Sticky Add To Cart</Link></li>
-                                        <li className='ms-0'><Link href="#!" className="sub-menu-item">Notify Me (Out Of Stock)</Link></li>
-                                        <li className='ms-0'><Link href="#!" className="sub-menu-item">Ask An Expert</Link></li>
-                                        <li className='ms-0'><Link href="#!" className="sub-menu-item">Variant Image Grouped</Link></li>
-                                        <li className='ms-0'><Link href="#!" className="sub-menu-item">Wishlist</Link></li>
-                                        <li className='ms-0'><Link href="#!" className="sub-menu-item">Trust Badge</Link></li>
-                                        <li className='ms-0'><Link href="#!" className="sub-menu-item">Delivery Information</Link></li>
+                                        <li className='ms-0'><Link href="/shop-grid" className="sub-menu-item">Bundle - Upsell</Link></li>
+                                        <li className='ms-0'><Link href="/shop-grid" className="sub-menu-item">Hot Stock</Link></li>
+                                        <li className='ms-0'><Link href="/shop-grid" className="sub-menu-item">Sticky Add To Cart</Link></li>
+                                        <li className='ms-0'><Link href="/shop-grid" className="sub-menu-item">Notify Me (Out Of Stock)</Link></li>
+                                        <li className='ms-0'><Link href="/shop-grid" className="sub-menu-item">Ask An Expert</Link></li>
+                                        <li className='ms-0'><Link href="/shop-grid" className="sub-menu-item">Variant Image Grouped</Link></li>
+                                        <li className='ms-0'><Link href="/shop-grid" className="sub-menu-item">Wishlist</Link></li>
+                                        <li className='ms-0'><Link href="/shop-grid" className="sub-menu-item">Trust Badge</Link></li>
+                                        <li className='ms-0'><Link href="/shop-grid" className="sub-menu-item">Delivery Information</Link></li>
                                     </ul>
                                 </li>
 
-                                <li className='ms-0'>
+                                {/* <li className='ms-0'>
                                     <ul>
                                         <li className="megamenu-head ms-0">Product Features</li>
                                         <li className='ms-0'><Link href="#!" className="sub-menu-item">Sold In Last</Link></li>
@@ -264,9 +264,9 @@ export default function Navbar({navClass, navlight}){
                                         <li className='ms-0'><Link href="#!" className="sub-menu-item">Variant Metafield Description</Link></li>
                                         <li className='ms-0'><Link href="#!" className="sub-menu-item">Variant Metafield Property</Link></li>
                                     </ul>
-                                </li>
+                                </li> */}
 
-                                <li className='ms-0'>
+                                {/* <li className='ms-0'>
                                     <ul>
                                         <li className="megamenu-head ms-0">Product Features</li>
                                         <li className='ms-0'><Link href="#!" className="sub-menu-item">Product Video</Link></li>
@@ -279,9 +279,9 @@ export default function Navbar({navClass, navlight}){
                                         <li className='ms-0'><Link href="#!" className="sub-menu-item">Product Complementary</Link></li>
                                         <li className='ms-0'><Link href="#!" className="sub-menu-item">Auto Discount</Link></li>
                                     </ul>
-                                </li>
+                                </li> */}
                         
-                                <li className='ms-0'>
+                                {/* <li className='ms-0'>
                                     <ul>
                                         <li className="megamenu-head ms-0">Product Features</li>
                                         <li className='ms-0'><Link href="#!" className="sub-menu-item">Custom Product Tabs</Link></li>
@@ -293,7 +293,7 @@ export default function Navbar({navClass, navlight}){
                                         <li className='ms-0'><Link href="#!" className="sub-menu-item">Custom Label</Link></li>
                                         <li className='ms-0'><Link href="#!" className="sub-menu-item">Local Pick Up</Link></li>
                                     </ul>
-                                </li>
+                                </li> */}
                         
                                 <li className='ms-0'>
                                     <ul>
@@ -305,7 +305,7 @@ export default function Navbar({navClass, navlight}){
                             </ul>
                         </li>
 
-                        <li className={`has-submenu parent-parent-menu-item ${['/shop-grid', '/shop-grid-left-sidebar', '/shop-grid-right-sidebar','/shop-list','/shop-list-left-sidebar','/shop-list-right-sidebar','/product-detail-one','/product-detail-two','/product-detail-three','/shop-cart','/shop-checkout','/our-store','/brands','/compare-product','/recently-viewed-product','/shop-item','/list-item','/detail-item','/grid-item'].includes(manu) ? 'active' : ''}`}><Link href="#" onClick={()=>setSubManu(subManu=== '/shop-item' ? '' : '/shop-item')}> Shop </Link><span className="menu-arrow"></span>
+                        {/* <li className={`has-submenu parent-parent-menu-item ${['/shop-grid', '/shop-grid-left-sidebar', '/shop-grid-right-sidebar','/shop-list','/shop-list-left-sidebar','/shop-list-right-sidebar','/product-detail-one','/product-detail-two','/product-detail-three','/shop-cart','/shop-checkout','/our-store','/brands','/compare-product','/recently-viewed-product','/shop-item','/list-item','/detail-item','/grid-item'].includes(manu) ? 'active' : ''}`}><Link href="#" onClick={()=>setSubManu(subManu=== '/shop-item' ? '' : '/shop-item')}> Shop </Link><span className="menu-arrow"></span>
                             <ul className={`submenu ${['/shop-grid', '/shop-grid-left-sidebar', '/shop-grid-right-sidebar','/shop-list','/shop-list-left-sidebar','/shop-list-right-sidebar','/product-detail-one','/product-detail-two','/product-detail-three','/shop-cart','/shop-checkout','/our-store','/brands','/compare-product','/recently-viewed-product','/shop-item','/list-item','/detail-item','/grid-item'].includes(subManu) ? 'open' : ''}`}>
                                 <li className={`has-submenu parent-menu-item ms-0 ${['/shop-grid','/shop-grid-left-sidebar','/shop-grid-right-sidebar','/grid-item'].includes(manu) ? 'active' : ''}`}>
                                     <Link href="#" onClick={()=>setSubManu(setManu === '/grid-item' ? '' : '/grid-item' )}> Shop Grid </Link><span className="submenu-arrow"></span>
@@ -340,7 +340,7 @@ export default function Navbar({navClass, navlight}){
                                 <li className={`ms-0 ${manu === '/compare-product' ? 'active' : ''}`}><Link href="/compare-product" className="sub-menu-item">Compare Product</Link></li>
                                 <li className={`ms-0 ${manu === '/recently-viewed-product' ? 'active' : ''}`}><Link href="/recently-viewed-product" className="sub-menu-item">Recently Viewed Products</Link></li>
                             </ul>
-                        </li>
+                        </li> */}
                 
                         <li className={`has-submenu parent-parent-menu-item ${['/aboutus','/user-account','/user-billing','/user-payment','/user-invoice','/user-social','/user-notification','/user-setting','/page-item','/user-item','/email-item','/email-confirmation','/email-cart','/email-offers','/email-order-success','/email-gift-voucher','/email-reset-password','/email-item-review','/blog-item','/blogs','/blog-detail','/help-item','/helpcenter','/helpcenter-faqs','/helpcenter-guides','/helpcenter-support','/auth-item','/login','/signup','/forgot-password','/lock-screen','/utility-item','/terms','/privacy','/comingsoon','/maintenance','/error','/special-item','/multi-item','/multi-item2','/multi-item3','/career'].includes(manu) ? 'active' : ''}`}>
                             <Link href="#" onClick={()=>setSubManu(setManu === '/page-item' ? '' : '/page-item' )}>Pages</Link><span className="menu-arrow"></span>

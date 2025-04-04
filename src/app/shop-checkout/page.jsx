@@ -163,7 +163,7 @@ export default function ShopCheckout(){
                                 </div>
                             </form>
                             <div className="mt-4">
-                                <input type="submit" className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-orange-500 text-white rounded-md w-full" value="Continue to checkout"/>
+                                <button type="submit" className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-orange-500 text-white rounded-md w-full" > Continue to checkout</button>
                             </div>
                         </div>
 
